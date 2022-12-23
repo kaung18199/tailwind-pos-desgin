@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <!-- header -->
+    <header class=" py-4 shadow-sm bg-white">
+        <div class="container flex item-center justify-between">
+            <!-- image -->
+            <a href="#" class=" flex items-center">
+                <h1 class=" text-2xl text-primary font-bold">KAUNG</h1>
+                <h1 class=" text-2xl text-gray-600 font-bold">STORE</h1>
+            </a>
+
+            <!-- search bar -->
+            <div class="w-full max-w-xl relative flex">
+                <span class=" absolute left-4 top-3 text-gray-400">
+                    <i class=" fas fa-search"></i>
+                </span>
+                <input type="text" class=" w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none" placeholder="search">
+                <button class=" bg-primary border border-primary text-white px-6 rounded-r-md hover:lg-transparent hover:text-primary transition hover:bg-white hover:border-gray-200">
+                    Search
+                </button>
+            </div>
+
+            <!-- icon -->
+            <div class=" flex items-center space-x-4">
+                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="text-xs leading-3">Wish list</div>
+                    <span class=" absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span>
+                </a>
+                <a href="./checkout.html" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="text-xs leading-3">Cart</div>
+                    <span class=" absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">4</span>
+                </a>
+                <a href="./account.html" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="text-xs leading-3">Account</div>
+
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- navbar -->
+    <nav class=" bg-gray-800">
+        <div class="container flex ">
+            <!-- all category -->
+            <div class=" px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
+                <span><i class="fa-solid fa-bars"></i></span>
+                <span class=" capitalize ml-2">All categories</span>
+
+                <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed hidden group-hover:block opacity-0 group-hover:opacity-100 transition duration-300">
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="./img/sofa_g29mc4vpr2df.svg" alt="" class="w-5 h-5 object-contain">
+                        <span class=" text-gray-600 text-sm ml-5">Sofa</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="./img/sofa_g29mc4vpr2df.svg" alt="" class="w-5 h-5 object-contain">
+                        <span class=" text-gray-600 text-sm ml-5">Book</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="./img/sofa_g29mc4vpr2df.svg" alt="" class="w-5 h-5 object-contain">
+                        <span class=" text-gray-600 text-sm ml-5">Office</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="./img/sofa_g29mc4vpr2df.svg" alt="" class="w-5 h-5 object-contain">
+                        <span class=" text-gray-600 text-sm ml-5">Table</span>
+                    </a>
+                </div>
+            </div>
+            <!-- all category end -->
+            <!-- nav bar link-->
+            <div class=" flex items-center justify-between flex-grow pl-12">
+                <div class="flex items-center space-x-6 capitalize">
+                    <a href="./index.html" class=" text-gray-200 hover:text-white transition">
+                        Home
+                    </a>
+                    <a href="./shop.html" class=" text-gray-200 hover:text-white transition">
+                        Shop
+                    </a>
+                    <a href="" class=" text-gray-200 hover:text-white transition">
+                        About us
+                    </a>
+                    <a href="" class=" text-gray-200 hover:text-white transition">
+                        Contact us
+                    </a>
+                </div>
+            </div>
+
+            <div class=" flex items-center space-x-6 capitalize text-white">
+                <a href="./login.html" class="hover:text-primary">Login</a>
+                <a href="" class="hover:text-primary">Register</a>
+            </div>
+            <!-- nav bar link end-->
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- banner -->
+    <div class="bg-cover bg-no-repeat bg-center py-36" style="background-image: url('./img/360_F_379333019_nacadjYqS3iwPM3c1fQVpuCqieuzH2ev.jpg');">
+        <div class="container">
+            <h1 class="text-4xl text-gray-800 font-medium mb-4 capitalize">
+                Best Collection for <br> Home Decreation
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit pariatur maxime enim nisi, corporis quam obcaecati reiciendis fuga est assumenda possimus atque, impedit voluptate tempora iste ipsam animi. Saepe, ratione.
+            </p>
+            <div class="mt-12">
+                <a href="#" class=" bg-primary border border-primary text-white px-8 py-3 font-medium rounded-md hover:bg-transparent hover:text-primary transition">Shop Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- banner end -->
+
+    <!-- feacture section -->
+    <div class="container py-16">
+        <div class=" w-10/12 grid grid-cols-3 gap-6 mx-auto justify-center">
+            <!-- single feature -->
+            <div class="border border-primary rounded-sm px-3 py-6 flex justify-center items-center gap-5">
+                <img src="./img/delivery_5e8348e7vatz.svg" alt="" class=" w-12 h-12 object-cover">
+                <div>
+                    <h1 class=" font-medium capitalize text-lg">
+                        Free Shopping
+                    </h1>
+                    <p class="text-gray-500 text-sm">
+                        Order over $200
+                    </p>
+                </div>
+            </div>
+            <!-- single feature -->
+            <div class="border border-primary rounded-sm px-3 py-6 flex justify-center items-center gap-5">
+                <img src="./img/money_hip7r4pxg29q.svg" alt="" class=" w-12 h-12 object-cover">
+                <div>
+                    <h1 class=" font-medium capitalize text-lg">
+                        Money Returns
+                    </h1>
+                    <p class="text-gray-500 text-sm">
+                        3% money returns
+                    </p>
+                </div>
+            </div>
+            <!-- single feature -->
+            <div class="border border-primary rounded-sm px-3 py-6 flex justify-center items-center gap-5">
+                <img src="./img/24-7_bdcw2pwez3ns.svg" alt="" class=" w-12 h-12 object-cover">
+                <div>
+                    <h1 class=" font-medium capitalize text-lg">
+                        24/7 Support
+                    </h1>
+                    <p class="text-gray-500 text-sm">
+                        Customer Support
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- feacture section end -->
+
+    <!-- categories -->
+    <div class="container py-16">
+        <h2 class=" text-3xl font-medium text-gray-800 uppercase">Shop By Category</h2>
+
+        <div class=" grid grid-cols-3 gap-3 mt-8">
+            <!-- single category -->
+            <div class="relative rounded-sm overflow-hidden group">
+                <img src="./img/download.jfif" alt="" class="w-full">
+                <a href="" class=" absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium opacity-80 group-hover:opacity-100">Room</a>
+            </div>
+            <!-- single category -->
+            <div class="relative rounded-sm overflow-hidden group">
+                <img src="./img/download.jfif" alt="" class="w-full">
+                <a href="" class=" absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium opacity-80 group-hover:opacity-100">Room</a>
+            </div>
+            <!-- single category -->
+            <div class="relative rounded-sm overflow-hidden group">
+                <img src="./img/download.jfif" alt="" class="w-full">
+                <a href="" class=" absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium opacity-80 group-hover:opacity-100">Room</a>
+            </div>
+            <!-- single category -->
+            <div class="relative rounded-sm overflow-hidden group">
+                <img src="./img/download.jfif" alt="" class="w-full">
+                <a href="" class=" absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium opacity-80 group-hover:opacity-100">Room</a>
+            </div>
+            <!-- single category -->
+            <div class="relative rounded-sm overflow-hidden group">
+                <img src="./img/download.jfif" alt="" class="w-full">
+                <a href="" class=" absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium opacity-80 group-hover:opacity-100">Room</a>
+            </div>
+            <!-- single category -->
+            <div class="relative rounded-sm overflow-hidden group">
+                <img src="./img/download.jfif" alt="" class="w-full">
+                <a href="" class=" absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium opacity-80 group-hover:opacity-100">Room</a>
+            </div>
+        </div>
+    </div>
+    <!-- categories end -->
+
+    <!-- product wrpper -->
+    <div class="container pb-16">
+        <h2 class="text-2xl font-medium text-gray-800 uppercase mb-6">
+            Top New Arrival
+        </h2>
+
+        <!-- product section grid -->
+        <div class=" grid grid-cols-4 gap-6">
+            <!-- single product -->
+            <div class=" bg-white shadow rounded overflow-hidden">
+                <!-- product image  -->
+                <div class="relative group">
+                    <img src="./img/gaming-chair-under-100-1648758718034.jpeg" class="w-full">
+                    <div class=" absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-100">
+                        <a href="./view.html" class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#" class="text-white text-lg w-9 h-9 ml-2 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"><i class="fa-solid fa-heart"></i></a>
+                    </div>
+                </div>
+                <!-- product details  -->
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#" class=" uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">Gamming Chair</a>
+                    <div class=" flex items-baseline mb-1 space-x-2 font-roboto">
+                        <p class="text-xl text-primary font-semibold mr-4">$100.00</p>
+                        <p class="text-sm text-gray-400 line-through">$120.00</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-500">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">
+                            (150)
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="block w-full py-1 text-center text-white bg-primary hover:bg-transparent hover:text-primary transition">Add to cart</a>
+            </div>
+            <!-- single product -->
+            <div class=" bg-white shadow rounded overflow-hidden">
+                <!-- product image  -->
+                <div class="relative group">
+                    <img src="./img/gaming-chair-under-100-1648758718034.jpeg" class="w-full">
+                    <div class=" absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-100">
+                        <a href="./view.html" class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#" class="text-white text-lg w-9 h-9 ml-2 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"><i class="fa-solid fa-heart"></i></a>
+                    </div>
+                </div>
+                <!-- product details  -->
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#" class=" uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">Gamming Chair</a>
+                    <div class=" flex items-baseline mb-1 space-x-2 font-roboto">
+                        <p class="text-xl text-primary font-semibold mr-4">$100.00</p>
+                        <p class="text-sm text-gray-400 line-through">$120.00</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-500">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">
+                            (150)
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="block w-full py-1 text-center text-white bg-primary hover:bg-transparent hover:text-primary transition">Add to cart</a>
+            </div>
+            <!-- single product -->
+            <div class=" bg-white shadow rounded overflow-hidden">
+                <!-- product image  -->
+                <div class="relative group">
+                    <img src="./img/gaming-chair-under-100-1648758718034.jpeg" class="w-full">
+                    <div class=" absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-100">
+                        <a href="./view.html" class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#" class="text-white text-lg w-9 h-9 ml-2 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"><i class="fa-solid fa-heart"></i></a>
+                    </div>
+                </div>
+                <!-- product details  -->
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#" class=" uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">Gamming Chair</a>
+                    <div class=" flex items-baseline mb-1 space-x-2 font-roboto">
+                        <p class="text-xl text-primary font-semibold mr-4">$100.00</p>
+                        <p class="text-sm text-gray-400 line-through">$120.00</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-500">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">
+                            (150)
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="block w-full py-1 text-center text-white bg-primary hover:bg-transparent hover:text-primary transition">Add to cart</a>
+            </div>
+            <!-- single product -->
+            <div class=" bg-white shadow rounded overflow-hidden">
+                <!-- product image  -->
+                <div class="relative group">
+                    <img src="./img/gaming-chair-under-100-1648758718034.jpeg" class="w-full">
+                    <div class=" absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-100">
+                        <a href="./view.html" class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#" class="text-white text-lg w-9 h-9 ml-2 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"><i class="fa-solid fa-heart"></i></a>
+                    </div>
+                </div>
+                <!-- product details  -->
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#" class=" uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">Gamming Chair</a>
+                    <div class=" flex items-baseline mb-1 space-x-2 font-roboto">
+                        <p class="text-xl text-primary font-semibold mr-4">$100.00</p>
+                        <p class="text-sm text-gray-400 line-through">$120.00</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-500">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">
+                            (150)
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="block w-full py-1 text-center text-white bg-primary hover:bg-transparent hover:text-primary transition">Add to cart</a>
+            </div>
+        </div>
+    </div>
+    <!-- product wrpper end -->
+
+    <!-- persent section -->
+    <div class="container rounded overflow-hidden bg-cover bg-no-repeat shadow" style="background-image: url(./img//360_F_379333019_nacadjYqS3iwPM3c1fQVpuCqieuzH2ev.jpg);">
+        <div class=" py-20 px-11">
+            <h1 class=" text-2xl text-gray-600 font-medium uppercase ">online exclusive</h1>
+            <h1 class=" text-7xl uppercase text-primary font-bold ">15% off</h1>
+            <p class=" text-3xl text-gray-700 uppercase font-semibold">accent char%</p>
+            <p class=" text-3xl text-gray-700 uppercase font-semibold mb-4">bendhies & ottomans</p>
+            <a href="#" class=" px-6 w-auto py-3 rounded-md shadow-md text-center text-white bg-primary hover:bg-transparent hover:text-primary transition">Shop here</a>
+        </div>
+
+    </div>
+    <!-- persent section end -->
+
+    <!-- product wrpper -->
+    <div class="container pb-16 mt-10">
+        <h2 class="text-2xl font-medium text-gray-800 uppercase mb-6">
+            Recommend products
+        </h2>
+
+        <!-- product section grid -->
+        <div class=" grid grid-cols-4 gap-6">
+            <!-- single product -->
+
+            <div class=" bg-white shadow rounded overflow-hidden">
+                <!-- product image  -->
+                <div class="relative group">
+                    <img src="./img/gaming-chair-under-100-1648758718034.jpeg" class="w-full">
+                    <div class=" absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-100">
+                        <a href="./view.html" class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#" class="text-white text-lg w-9 h-9 ml-2 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"><i class="fa-solid fa-heart"></i></a>
+                    </div>
+                </div>
+                <!-- product details  -->
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#" class=" uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">Gamming Chair</a>
+                    <div class=" flex items-baseline mb-1 space-x-2 font-roboto">
+                        <p class="text-xl text-primary font-semibold mr-4">$100.00</p>
+                        <p class="text-sm text-gray-400 line-through">$120.00</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-500">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">
+                            (150)
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="block w-full py-1 text-center text-white bg-primary hover:bg-transparent hover:text-primary transition">Add to cart</a>
+            </div>
+            <!-- single product -->
+            <div class=" bg-white shadow rounded overflow-hidden">
+                <!-- product image  -->
+                <div class="relative group">
+                    <img src="./img/gaming-chair-under-100-1648758718034.jpeg" class="w-full">
+                    <div class=" absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-100">
+                        <a href="./view.html" class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#" class="text-white text-lg w-9 h-9 ml-2 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"><i class="fa-solid fa-heart"></i></a>
+                    </div>
+                </div>
+                <!-- product details  -->
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#" class=" uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">Gamming Chair</a>
+                    <div class=" flex items-baseline mb-1 space-x-2 font-roboto">
+                        <p class="text-xl text-primary font-semibold mr-4">$100.00</p>
+                        <p class="text-sm text-gray-400 line-through">$120.00</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-500">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">
+                            (150)
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="block w-full py-1 text-center text-white bg-primary hover:bg-transparent hover:text-primary transition">Add to cart</a>
+            </div>
+            <!-- single product -->
+            <div class=" bg-white shadow rounded overflow-hidden">
+                <!-- product image  -->
+                <div class="relative group">
+                    <img src="./img/gaming-chair-under-100-1648758718034.jpeg" class="w-full">
+                    <div class=" absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-100">
+                        <a href="./view.html" class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#" class="text-white text-lg w-9 h-9 ml-2 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"><i class="fa-solid fa-heart"></i></a>
+                    </div>
+                </div>
+                <!-- product details  -->
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#" class=" uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">Gamming Chair</a>
+                    <div class=" flex items-baseline mb-1 space-x-2 font-roboto">
+                        <p class="text-xl text-primary font-semibold mr-4">$100.00</p>
+                        <p class="text-sm text-gray-400 line-through">$120.00</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-500">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">
+                            (150)
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="block w-full py-1 text-center text-white bg-primary hover:bg-transparent hover:text-primary transition">Add to cart</a>
+            </div>
+            <!-- single product -->
+            <div class=" bg-white shadow rounded overflow-hidden">
+                <!-- product image  -->
+                <div class="relative group">
+                    <img src="./img/gaming-chair-under-100-1648758718034.jpeg" class="w-full">
+                    <div class=" absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-100">
+                        <a href="./view.html" class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#" class="text-white text-lg w-9 h-9 ml-2 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"><i class="fa-solid fa-heart"></i></a>
+                    </div>
+                </div>
+                <!-- product details  -->
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#" class=" uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">Gamming Chair</a>
+                    <div class=" flex items-baseline mb-1 space-x-2 font-roboto">
+                        <p class="text-xl text-primary font-semibold mr-4">$100.00</p>
+                        <p class="text-sm text-gray-400 line-through">$120.00</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-500">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">
+                            (150)
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="block w-full py-1 text-center text-white bg-primary hover:bg-transparent hover:text-primary transition">Add to cart</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class=" bg-white pt-16 pb-12 border-t border-gray-100">
+        <div class="container grid grid-cols-3">
+            <!-- txt footer -->
+            <div class="col-span-1 space-y-8">
+                <a href="#" class=" flex items-center">
+                    <h1 class=" text-2xl text-primary font-bold">KAUNG</h1>
+                    <h1 class=" text-2xl text-gray-600 font-bold">STORE</h1>
+                </a>
+                <p class="text-gray-500">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-gray-500">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-500">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-500">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-500">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- link footer -->
+            <div class="col-span-2 grid grid-cols-4 gap-8">
+                <div class="">
+                    <h3 class="text-sm font-semibold text-gray-600 uppercase tracking-wider">Solutions</h3>
+                    <div class="mt-4 space-y-4">
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Analytics</a>
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Commerce</a>
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Insights</a>
+                    </div>
+                </div>
+                <div class="">
+                    <h3 class="text-sm font-semibold text-gray-600 uppercase tracking-wider">Supports</h3>
+                    <div class="mt-4 space-y-4">
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Pricing</a>
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Documention</a>
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">duides</a>
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Api status</a>
+                    </div>
+                </div>
+                <div class="">
+                    <h3 class="text-sm font-semibold text-gray-600 uppercase tracking-wider">Solutions</h3>
+                    <div class="mt-4 space-y-4">
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Analytics</a>
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Commerce</a>
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Insights</a>
+                    </div>
+                </div>
+                <div class="">
+                    <h3 class="text-sm font-semibold text-gray-600 uppercase tracking-wider">Supports</h3>
+                    <div class="mt-4 space-y-4">
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Pricing</a>
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Documention</a>
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">duides</a>
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Api status</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- copy right area -->
+    <div class="bg-gray-800 py-4">
+        <div class="container flex items-center justify-center">
+            <p class=" text-white">@ KAUNG - ALL Rights 2022</p>
+
+        </div>
+    </div>
+</body>
+
+</html>

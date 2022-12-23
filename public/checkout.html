@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <!-- header -->
+    <header class=" py-4 shadow-sm bg-white">
+        <div class="container flex item-center justify-between">
+            <!-- image -->
+            <a href="#" class=" flex items-center">
+                <h1 class=" text-2xl text-primary font-bold">KAUNG</h1>
+                <h1 class=" text-2xl text-gray-600 font-bold">STORE</h1>
+            </a>
+
+            <!-- search bar -->
+            <div class="w-full max-w-xl relative flex">
+                <span class=" absolute left-4 top-3 text-gray-400">
+                    <i class=" fas fa-search"></i>
+                </span>
+                <input type="text" class=" w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none" placeholder="search">
+                <button class=" bg-primary border border-primary text-white px-6 rounded-r-md hover:lg-transparent hover:text-primary transition hover:bg-white hover:border-gray-200">
+                    Search
+                </button>
+            </div>
+
+            <!-- icon -->
+            <div class=" flex items-center space-x-4">
+                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="text-xs leading-3">Wish list</div>
+                    <span class=" absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span>
+                </a>
+                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="text-xs leading-3">Cart</div>
+                    <span class=" absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">4</span>
+                </a>
+                <a href="./account.html" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="text-xs leading-3">Account</div>
+
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- navbar -->
+    <nav class=" bg-gray-800">
+        <div class="container flex ">
+            <!-- all category -->
+            <div class=" px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
+                <span><i class="fa-solid fa-bars"></i></span>
+                <span class=" capitalize ml-2">All categories</span>
+
+                <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed hidden group-hover:block opacity-0 group-hover:opacity-100 transition duration-300">
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="./img/sofa_g29mc4vpr2df.svg" alt="" class="w-5 h-5 object-contain">
+                        <span class=" text-gray-600 text-sm ml-5">Sofa</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="./img/sofa_g29mc4vpr2df.svg" alt="" class="w-5 h-5 object-contain">
+                        <span class=" text-gray-600 text-sm ml-5">Book</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="./img/sofa_g29mc4vpr2df.svg" alt="" class="w-5 h-5 object-contain">
+                        <span class=" text-gray-600 text-sm ml-5">Office</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="./img/sofa_g29mc4vpr2df.svg" alt="" class="w-5 h-5 object-contain">
+                        <span class=" text-gray-600 text-sm ml-5">Table</span>
+                    </a>
+                </div>
+            </div>
+            <!-- all category end -->
+            <!-- nav bar link-->
+            <div class=" flex items-center justify-between flex-grow pl-12">
+                <div class="flex items-center space-x-6 capitalize">
+                    <a href="./index.html" class=" text-gray-200 hover:text-white transition">
+                        Home
+                    </a>
+                    <a href="./shop.html" class=" text-gray-200 hover:text-white transition">
+                        Shop
+                    </a>
+                    <a href="" class=" text-gray-200 hover:text-white transition">
+                        About us
+                    </a>
+                    <a href="" class=" text-gray-200 hover:text-white transition">
+                        Contact us
+                    </a>
+                </div>
+            </div>
+
+            <div class=" flex items-center space-x-6 capitalize text-white">
+                <a href="./login.html" class="hover:text-primary">Login</a>
+                <a href="" class="hover:text-primary">Register</a>
+            </div>
+            <!-- nav bar link end-->
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- breakcure -->
+    <div class="container py-4 flex items-center space-x-2">
+        <a href="index.html" class="text-primary text-base">
+            <i class="fa-solid fa-house-chimney"></i>
+        </a>
+        <span class="text-sm text-gray-400">
+            <i class="fa-solid fa-chevron-right"></i>
+        </span>
+        <p class="text-gray-600 font-medium capitalize">Checkout</p>
+    </div>
+    <!-- breakcure end -->
+
+    <!-- checkout wrapper -->
+    <div class="container grid grid-cols-12 items-start pb-16 pt-4 gap-4">
+        <!-- checkout form -->
+        <div class="col-span-8 border border-gray-200 p-4 rounded">
+            <h3 class=" text-lg font-medium capitalize mb-4">checkout</h3>
+            <div class="space-y-4">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="">
+                        <label for="" class="text-gray-600 mb-2 block">First Name <span class="text-primary">*</span></label>
+                        <input type="text" class=" block w-full border border-gray-300 px-4 text-gray-300 py-3 text-sm rounded focus:ring-0 focus:border-primary" placeholder="First Name">
+                    </div>
+                    <div class="">
+                        <label for="" class="text-gray-600 mb-2 block">Last Name <span class="text-primary">*</span></label>
+                        <input type="text" class=" block w-full border border-gray-300 px-4 text-gray-300 py-3 text-sm rounded focus:ring-0 focus:border-primary" placeholder="Last Name">
+                    </div>
+                </div>
+                <div>
+                    <label for="" class="text-gray-600 mb-2 block">Company Name</label>
+                    <input type="text" class=" block w-full border border-gray-300 px-4 text-gray-300 py-3 text-sm rounded focus:ring-0 focus:border-primary">
+                </div>
+                <div>
+                    <label for="" class="text-gray-600 mb-2 block">Street Address</label>
+                    <input type="text" class=" block w-full border border-gray-300 px-4 text-gray-300 py-3 text-sm rounded focus:ring-0 focus:border-primary">
+                </div>
+                <div>
+                    <label for="" class="text-gray-600 mb-2 block">Town / City</label>
+                    <input type="text" class=" block w-full border border-gray-300 px-4 text-gray-300 py-3 text-sm rounded focus:ring-0 focus:border-primary">
+                </div>
+                <div>
+                    <label for="" class="text-gray-600 mb-2 block">Zip code</label>
+                    <input type="text" class=" block w-full border border-gray-300 px-4 text-gray-300 py-3 text-sm rounded focus:ring-0 focus:border-primary">
+                </div>
+                <div>
+                    <label for="" class="text-gray-600 mb-2 block">Mobile Number</label>
+                    <input type="text" class=" block w-full border border-gray-300 px-4 text-gray-300 py-3 text-sm rounded focus:ring-0 focus:border-primary">
+                </div>
+                <div>
+                    <label for="" class="text-gray-600 mb-2 block">Smart Address</label>
+                    <input type="text" class=" block w-full border border-gray-300 px-4 text-gray-300 py-3 text-sm rounded focus:ring-0 focus:border-primary">
+                </div>
+            </div>
+        </div>
+        <!-- checkout form end -->
+        <!-- side bar -->
+        <div class="col-span-4 border border-gray-200 p-4 rounded">
+            <h4 class="text-gray-800 text-lg mb-4 font-medium uppercase">
+                Order summary
+            </h4>
+            <div class="space-y-2">
+                <div class="flex justify-between">
+                    <div>
+                        <h5 class="text-gray-800 font-medium">Gaming chair</h5>
+                        <p class=" text-sm text-gray-600">Size : M</p>
+                    </div>
+                    <p class="text-gray-600">*3</p>
+                    <p class="text-gray-600 font-medium">
+                        $120.00
+                    </p>
+                </div>
+                <div class="flex justify-between">
+                    <div>
+                        <h5 class="text-gray-800 font-medium">Gaming chair</h5>
+                        <p class=" text-sm text-gray-600">Size : M</p>
+                    </div>
+                    <p class="text-gray-600">*3</p>
+                    <p class="text-gray-600 font-medium">
+                        $120.00
+                    </p>
+                </div>
+                <div class="flex justify-between">
+                    <div>
+                        <h5 class="text-gray-800 font-medium">Gaming chair</h5>
+                        <p class=" text-sm text-gray-600">Size : M</p>
+                    </div>
+                    <p class="text-gray-600">*3</p>
+                    <p class="text-gray-600 font-medium">
+                        $120.00
+                    </p>
+                </div>
+            </div>
+            <div class="flex justify-between border-b border-grau-200 mt-4 text-gray-800 font-medium my-3 uppercase">
+                <p>SubTotal</p>
+                <p>$360.00</p>
+            </div>
+            <div class="flex justify-between border-b border-grau-200 mt-4 text-gray-800 font-medium my-3 uppercase">
+                <p>shopping</p>
+                <p>Free</p>
+            </div>
+            <div class="flex justify-between border-b border-grau-200  mt-4 text-gray-800 font-medium my-3 uppercase">
+                <p>Total</p>
+                <p>$360.00</p>
+            </div>
+            <div class="flex items-center mb-4 mt-4">
+                <input type="checkbox" class="text-primary mr-2  focus:ring-0 rounded-sm cursor-pointer w-3 h-3" id="">
+                <label for="">Agree to our <a href="#" class=" text-primary">terms and condition</a></label>
+            </div>
+            <div class="mt-4">
+                <button type="submit" class=" block w-full text-center text-white bg-primary border border-primary rounded hover:bg-transparent hover:text-primary transition font-roboto font-medium py-2 uppercase">
+                    process to checkout
+                </button>
+            </div>
+        </div>
+        <!-- side bar end -->
+    </div>
+    <!-- checkout wrapper end -->
+
+    <!-- footer -->
+    <footer class=" bg-white pt-16 pb-12 border-t border-gray-100">
+        <div class="container grid grid-cols-3">
+            <!-- txt footer -->
+            <div class="col-span-1 space-y-8">
+                <a href="#" class=" flex items-center">
+                    <h1 class=" text-2xl text-primary font-bold">KAUNG</h1>
+                    <h1 class=" text-2xl text-gray-600 font-bold">STORE</h1>
+                </a>
+                <p class="text-gray-500">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-gray-500">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-500">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-500">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-500">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- link footer -->
+            <div class="col-span-2 grid grid-cols-4 gap-8">
+                <div class="">
+                    <h3 class="text-sm font-semibold text-gray-600 uppercase tracking-wider">Solutions</h3>
+                    <div class="mt-4 space-y-4">
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Analytics</a>
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Commerce</a>
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Insights</a>
+                    </div>
+                </div>
+                <div class="">
+                    <h3 class="text-sm font-semibold text-gray-600 uppercase tracking-wider">Supports</h3>
+                    <div class="mt-4 space-y-4">
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Pricing</a>
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Documention</a>
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">duides</a>
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Api status</a>
+                    </div>
+                </div>
+                <div class="">
+                    <h3 class="text-sm font-semibold text-gray-600 uppercase tracking-wider">Solutions</h3>
+                    <div class="mt-4 space-y-4">
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Analytics</a>
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Commerce</a>
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Insights</a>
+                    </div>
+                </div>
+                <div class="">
+                    <h3 class="text-sm font-semibold text-gray-600 uppercase tracking-wider">Supports</h3>
+                    <div class="mt-4 space-y-4">
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Pricing</a>
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Documention</a>
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">duides</a>
+                        <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Api status</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- copy right area -->
+    <div class="bg-gray-800 py-4">
+        <div class="container flex items-center justify-center">
+            <p class=" text-white">@ KAUNG - ALL Rights 2022</p>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
